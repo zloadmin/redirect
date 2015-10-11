@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('/addurl', 'RedirectController@addurl');
+Route::get('/{id}', 'RedirectController@redirecturl');
+
